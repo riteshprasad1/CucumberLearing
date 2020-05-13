@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.473177">
+<testcase classname="Guru99 Add customer feature" name="Guru99 Add new customer scenario" time="25.473177">
+<system-out><![CDATA[Given user is already on login page.........................................passed
+When title of login page is Guru99..........................................passed
+Then user enter "mngr260414" and "bEpYnum"..................................passed
+Then user click on login button.............................................passed
+Then user is on home page...................................................passed
+Then user clicks on new customer link.......................................passed
+Then user enters "Ritesh" and "m" and "26" and "02" and "1991"..............passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
