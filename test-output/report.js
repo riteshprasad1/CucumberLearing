@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITESH/seleniumframework/CucumberFramworkBDD/src/main/java/features/AddCustomerDataTable.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITESH/seleniumframework/CucumberFramworkBDD/src/main/java/features/AddCustomerDataTableMap.feature");
 formatter.feature({
   "line": 1,
-  "name": "Guru99 Add customer feature with DataTable",
+  "name": "Guru99 Add customer feature with DataTable and Maps",
   "description": "",
-  "id": "guru99-add-customer-feature-with-datatable",
+  "id": "guru99-add-customer-feature-with-datatable-and-maps",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Guru99 Add new customer scenario with DataTable",
+  "name": "Guru99 Add new customer scenario with DataTable and maps",
   "description": "",
-  "id": "guru99-add-customer-feature-with-datatable;guru99-add-new-customer-scenario-with-datatable",
+  "id": "guru99-add-customer-feature-with-datatable-and-maps;guru99-add-new-customer-scenario-with-datatable-and-maps",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -30,33 +30,50 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
         "mngr260414",
         "bEpYnum"
       ],
-      "line": 8
+      "line": 9
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "user click on login button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "user is on home page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "user clicks on new customer link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "user enters name and gender and dd and mm and yyyy",
   "rows": [
+    {
+      "cells": [
+        "name",
+        "gender",
+        "dd",
+        "mm",
+        "yyyy"
+      ],
+      "line": 14
+    },
     {
       "cells": [
         "Ritesh",
@@ -65,62 +82,80 @@ formatter.step({
         "02",
         "1991"
       ],
-      "line": 13
+      "line": 15
+    },
+    {
+      "cells": [
+        "Prasad",
+        "m",
+        "27",
+        "03",
+        "1992"
+      ],
+      "line": 16
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 17,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.user_is_already_on_login_page()"
+  "location": "AddCustomerDataTableMapDefiniton.user_is_already_on_login_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8652094783,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.title_of_login_page_is_Guru99()"
+  "location": "AddCustomerDataTableMapDefiniton.title_of_login_page_is_Guru99()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 36767963,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.user_enter_username_and_password(DataTable)"
+  "location": "AddCustomerDataTableMapDefiniton.user_enter_username_and_password(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 770651911,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.user_click_on_login_button()"
+  "location": "AddCustomerDataTableMapDefiniton.user_click_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2197842954,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.user_is_on_home_page()"
+  "location": "AddCustomerDataTableMapDefiniton.user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 45265806,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.user_clicks_on_new_customer_link()"
+  "location": "AddCustomerDataTableMapDefiniton.user_clicks_on_new_customer_link()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 832782975,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.user_enters_newcustomerdetails(DataTable)"
+  "location": "AddCustomerDataTableMapDefiniton.user_enters_newcustomerdetails(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25475816729,
+  "status": "passed"
 });
 formatter.match({
-  "location": "AddCustomerDataTableDefinition.close_the_browser()"
+  "location": "AddCustomerDataTableMapDefiniton.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 696593422,
+  "status": "passed"
 });
 });
