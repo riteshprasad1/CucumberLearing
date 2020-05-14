@@ -1,18 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITESH/seleniumframework/CucumberFramworkBDD/src/main/java/features/AddCustomer.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITESH/seleniumframework/CucumberFramworkBDD/src/main/java/features/AddCustomerDataTable.feature");
 formatter.feature({
   "line": 1,
-  "name": "Guru99 Add customer feature",
+  "name": "Guru99 Add customer feature with DataTable",
   "description": "",
-  "id": "guru99-add-customer-feature",
+  "id": "guru99-add-customer-feature-with-datatable",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.scenario({
   "line": 3,
-  "name": "Guru99 Add new customer scenario",
+  "name": "Guru99 Add new customer scenario with DataTable",
   "description": "",
-  "id": "guru99-add-customer-feature;guru99-add-new-customer-scenario",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "guru99-add-customer-feature-with-datatable;guru99-add-new-customer-scenario-with-datatable",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
@@ -26,214 +26,101 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user click on login button",
+  "name": "user enter username and password",
+  "rows": [
+    {
+      "cells": [
+        "mngr260414",
+        "bEpYnum"
+      ],
+      "line": 8
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "user is on home page",
+  "name": "user click on login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "user clicks on new customer link",
+  "name": "user is on home page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user enters \"\u003cname\u003e\" and \"\u003cgender\u003e\" and \"\u003cdd\u003e\" and \"\u003cmm\u003e\" and \"\u003cyyyy\u003e\"",
+  "name": "user clicks on new customer link",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 14,
-  "name": "",
-  "description": "",
-  "id": "guru99-add-customer-feature;guru99-add-new-customer-scenario;",
+  "name": "user enters name and gender and dd and mm and yyyy",
   "rows": [
     {
       "cells": [
-        "username",
-        "password",
-        "name",
-        "gender",
-        "dd",
-        "mm",
-        "yyyy"
-      ],
-      "line": 16,
-      "id": "guru99-add-customer-feature;guru99-add-new-customer-scenario;;1"
-    },
-    {
-      "cells": [
-        "mngr260414",
-        "bEpYnum",
         "Ritesh",
         "m",
         "26",
         "02",
         "1991"
       ],
-      "line": 17,
-      "id": "guru99-add-customer-feature;guru99-add-new-customer-scenario;;2"
+      "line": 13
     }
   ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "Guru99 Add new customer scenario",
-  "description": "",
-  "id": "guru99-add-customer-feature;guru99-add-new-customer-scenario;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 5,
-  "name": "user is already on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "title of login page is Guru99",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enter \"mngr260414\" and \"bEpYnum\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "user click on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user clicks on new customer link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters \"Ritesh\" and \"m\" and \"26\" and \"02\" and \"1991\"",
-  "matchedColumns": [
-    2,
-    3,
-    4,
-    5,
-    6
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_already_on_login_page()"
+  "location": "AddCustomerDataTableDefinition.user_is_already_on_login_page()"
 });
 formatter.result({
-  "duration": 8996362665,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_login_page_is_Guru99()"
+  "location": "AddCustomerDataTableDefinition.title_of_login_page_is_Guru99()"
 });
 formatter.result({
-  "duration": 34035984,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "mngr260414",
-      "offset": 12
-    },
-    {
-      "val": "bEpYnum",
-      "offset": 29
-    }
-  ],
-  "location": "LoginStepDefinition.user_enter_username_and_password(String,String)"
+  "location": "AddCustomerDataTableDefinition.user_enter_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 745784629,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_click_on_login_button()"
+  "location": "AddCustomerDataTableDefinition.user_click_on_login_button()"
 });
 formatter.result({
-  "duration": 3000957441,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_home_page()"
+  "location": "AddCustomerDataTableDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 39227290,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_new_customer_link()"
+  "location": "AddCustomerDataTableDefinition.user_clicks_on_new_customer_link()"
 });
 formatter.result({
-  "duration": 853678707,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Ritesh",
-      "offset": 13
-    },
-    {
-      "val": "m",
-      "offset": 26
-    },
-    {
-      "val": "26",
-      "offset": 34
-    },
-    {
-      "val": "02",
-      "offset": 43
-    },
-    {
-      "val": "1991",
-      "offset": 52
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_newcustomerdetails(String,String,String,String,String)"
+  "location": "AddCustomerDataTableDefinition.user_enters_newcustomerdetails(DataTable)"
 });
 formatter.result({
-  "duration": 11078430635,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
+  "location": "AddCustomerDataTableDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 724699543,
-  "status": "passed"
+  "status": "skipped"
 });
 });

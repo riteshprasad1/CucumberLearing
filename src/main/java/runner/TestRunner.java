@@ -6,10 +6,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= "C:\\Users\\RITESH\\seleniumframework\\CucumberFramworkBDD\\src\\main\\java\\features\\AddCustomer.feature",
-		glue= {"stepdefinition"},
+		features= "C:\\Users\\RITESH\\seleniumframework\\CucumberFramworkBDD\\src\\main\\java\\features\\AddCustomerDataTable.feature",
+		//glue= {"stepDefinitionNewCustomer"},
+		glue= {"helper","stepDefinitionNewCustomer"},
 		format= {"pretty","html:test-output","json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"},
-		dryRun = false,
+		dryRun = true,
 		monochrome = true
 		)
 
