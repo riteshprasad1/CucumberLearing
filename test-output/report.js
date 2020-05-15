@@ -1,84 +1,215 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITESH/seleniumframework/CucumberFramworkBDD/src/main/java/features/Tagging.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITESH/seleniumframework/CucumberFramworkBDD/src/main/java/features/TaggedHooks.feature");
 formatter.feature({
   "line": 1,
-  "name": "Verify Tagging functionality",
+  "name": "Test tagged hooks",
   "description": "",
-  "id": "verify-tagging-functionality",
+  "id": "test-tagged-hooks",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 401108,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 151377,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 141543,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 13,
-  "name": "Verify remove customer",
+  "line": 4,
+  "name": "This is first test",
   "description": "",
-  "id": "verify-tagging-functionality;verify-remove-customer",
+  "id": "test-tagged-hooks;this-is-first-test",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 12,
-      "name": "@Sanity"
+      "line": 3,
+      "name": "@First"
     }
   ]
 });
 formatter.step({
-  "line": 14,
-  "name": "when user is going to click remove customer",
+  "line": 5,
+  "name": "this is the first step",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 6,
+  "name": "this is the second step",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "this is the third step",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "TaggingStepDefinition.when_user_is_going_to_click_remove_customer()"
+  "location": "TaggedHookStepDefinition.this_is_the_first_step()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 182243081,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_second_step()"
+});
+formatter.result({
+  "duration": 135983,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_third_step()"
+});
+formatter.result({
+  "duration": 384430,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 219797,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 97497,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 103484,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 145391,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 158220,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "This is second test",
+  "description": "",
+  "id": "test-tagged-hooks;this-is-second-test",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 9,
+      "name": "@Second"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "this is the first step",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "this is the second step",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "this is the third step",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_first_step()"
+});
+formatter.result({
+  "duration": 170620,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_second_step()"
+});
+formatter.result({
+  "duration": 87234,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_third_step()"
+});
+formatter.result({
+  "duration": 363049,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 135128,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 150949,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 320715,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 97925,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 16,
-  "name": "Verify new customer add phone",
+  "name": "This is third test",
   "description": "",
-  "id": "verify-tagging-functionality;verify-new-customer-add-phone",
+  "id": "test-tagged-hooks;this-is-third-test",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 15,
-      "name": "@End2End"
+      "name": "@Third"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "when user is going to click new customer add phone",
+  "name": "this is the first step",
   "keyword": "Given "
-});
-formatter.match({
-  "location": "TaggingStepDefinition.when_user_is_going_to_click_new_customer_add_phone()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 19,
-  "name": "Verify click logout",
-  "description": "",
-  "id": "verify-tagging-functionality;verify-click-logout",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 18,
-      "name": "@End2End"
-    }
-  ]
 });
 formatter.step({
-  "line": 20,
-  "name": "when user is going to click logout",
-  "keyword": "Given "
+  "line": 18,
+  "name": "this is the second step",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "this is the third step",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "TaggingStepDefinition.when_user_is_going_to_click_logout()"
+  "location": "TaggedHookStepDefinition.this_is_the_first_step()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 107332,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_second_step()"
+});
+formatter.result({
+  "duration": 84669,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHookStepDefinition.this_is_the_third_step()"
+});
+formatter.result({
+  "duration": 95787,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 306604,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 74406,
+  "status": "passed"
 });
 });

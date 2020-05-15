@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
-<testcase classname="Verify Tagging functionality" name="Verify remove customer" time="0">
-<system-out><![CDATA[Given when user is going to click remove customer...........................skipped
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.186176">
+<testcase classname="Test tagged hooks" name="This is first test" time="0.183878">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verify Tagging functionality" name="Verify new customer add phone" time="0">
-<system-out><![CDATA[Given when user is going to click new customer add phone....................skipped
+<testcase classname="Test tagged hooks" name="This is second test" time="0.001211">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Verify Tagging functionality" name="Verify click logout" time="0">
-<system-out><![CDATA[Given when user is going to click logout....................................skipped
+<testcase classname="Test tagged hooks" name="This is third test" time="0.001087">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -6,13 +6,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= "C:\\Users\\RITESH\\seleniumframework\\CucumberFramworkBDD\\src\\main\\java\\features\\Tagging.feature",
+		features= "C:\\Users\\RITESH\\seleniumframework\\CucumberFramworkBDD\\src\\main\\java\\features\\TaggedHooks.feature",
 		//glue= {"stepDefinitionNewCustomer"},
-		glue= {"helper","stepDefinitionNewCustMap"},
+		glue= {"helper","hooksStepDefinition"},
 		format= {"pretty","html:test-output","json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"},
-		dryRun = true,
-		monochrome = true,
-		tags = {"~@Regression", "~@Smoke"}	//{"@Regression", "@Smoke"}-- it is AND condition where both scenario with Smoke and regression will be executed
+		dryRun = false,
+		monochrome = true
+		//tags = {"~@Regression", "~@Smoke"}	//{"@Regression", "@Smoke"}-- it is AND condition where both scenario with Smoke and regression will be executed
 											//{"@Regression , @Smoke"}--it is OR condition where either smoke or regression will be executed
 		)									//{"~@Regression", "@Smoke"}--special character ~ is used to ignore test
 
